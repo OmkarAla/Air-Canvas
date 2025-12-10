@@ -1,41 +1,41 @@
-# 🎨 Virtual Air Painting with Hand Gesture Recognition  
+# Virtual Air Painting with Hand Gesture Recognition  
 
 This project implements a **virtual air painting** system using **OpenCV, Mediapipe, and a Random Forest model** for hand gesture recognition. The system allows users to draw in the air using hand gestures, with the ability to change colors and erase strokes.  
 
 ---
 
-## 🚀 Features  
+## Features  
 
-### ✅ Hand Gesture Recognition:  
+### Hand Gesture Recognition:  
 - Uses **Mediapipe** to track hand landmarks  
 
 - Uses a **Random Forest** model to classify hand gestures:  
 
-  - ✋ **Open Palm** → Stops writing  
+  - **Open Palm** → Stops writing  
 
-  - ✍ **Writing Hand** → Allows drawing  
+  - **Writing Hand** → Allows drawing  
 
-### ✅ Painting Features:  
+### Painting Features:  
 
-- 🖍 **Draw** using your **index finger**  
+- **Draw** using your **index finger**  
 
-- 🎨 **Change colors** dynamically  
+- **Change colors** dynamically  
 
-- ❌ **Erase** or **clear** the canvas  
+- **Erase** or **clear** the canvas  
 
-- 📺 **Real-time visual feedback** on the screen  
+- **Real-time visual feedback** on the screen  
 
-### ✅ Optimized for Performance:  
+### Optimized for Performance:  
 
-- 🏎 **Efficient deque-based** stroke storage  
+- **Efficient deque-based** stroke storage  
 
-- ⚙ **Fixed IndexError** for seamless drawing  
+- **Fixed IndexError** for seamless drawing  
 
-- 🔄 **Smooth animations & real-time processing**  
+- **Smooth animations & real-time processing**  
 
 ---
 
-## 🛠 Tech Stack  
+## Tech Stack  
 
 - **Python**  
 
@@ -47,45 +47,40 @@ This project implements a **virtual air painting** system using **OpenCV, Mediap
 
 ---
 
-## 📂 Folder Structure  
+## Folder Structure  
 
 ```bash
-📦 Virtual-Air-Painting
- ┣ 📜 main.py           # Main application script
- ┣ 📜 hand_model.pkl    # Trained Random Forest model
- ┣ 📜 README.md         # Project documentation
- ┣ 📜 requirements.txt  # Dependencies list
+Virtual-Air-Painting
+ ┣ main.py           # Main application script
+ ┣ hand_model.pkl    # Trained Random Forest model
+ ┣ README.md         # Project documentation
+ ┣ requirements.txt  # Dependencies list
 ```
 
-### 🔧 Setup & Installation
-1️⃣ Clone the Repository :
+### Setup & Installation
+Clone the Repository :
 ```bash
 git clone https://github.com/your-username/Virtual-Air-Painting.git
 cd Virtual-Air-Painting
 ```
 
-2️⃣ Install Dependencies :
+Install Dependencies :
 ```bash
 pip install -r requirements.txt
 ```
 
-3️⃣ Run the Application
+Run the Application
 
 
-### 🖥️ Usage Instructions :
-1️⃣ Start the program and position your hand in front of the camera.
+### Usage Instructions :
+Start the program and position your hand in front of the camera.
+Select a color by pointing your index finger to the color buttons at the top.
+Draw in the air by moving your index finger while the model detects a "Writing Hand."
+Stop drawing by opening your palm.
+Clear the screen by selecting the "CLEAR" button.
+Press 'q' to exit the program.
 
-2️⃣ Select a color by pointing your index finger to the color buttons at the top.
-
-3️⃣ Draw in the air by moving your index finger while the model detects a "Writing Hand."
-
-4️⃣ Stop drawing by opening your palm.
-
-5️⃣ Clear the screen by selecting the "CLEAR" button.
-
-🛑 Press 'q' to exit the program.
-
-### 📊 Model Training:
+### Model Training:
 - Improve Model Accuracy with more training data
 
 - Support Multiple Gestures for additional features
@@ -95,5 +90,5 @@ pip install -r requirements.txt
 - Save Drawings as image files
 
 ---
-### 📜 License
+### License
 This project is licensed under the MIT License.
